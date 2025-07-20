@@ -54,12 +54,13 @@
 
 % Profile Summary
 \begin{center}
+\hspace*{-12mm}% Move left by 12mm (20mm original margin - 8mm desired margin)
 \begin{tcolorbox}[
     colback=gray!20,
     colframe=gray!20,
     sharp corners,
     boxrule=0pt,
-    width=\textwidth,
+    width=\dimexpr\textwidth+24mm\relax,% Extend width by 24mm (12mm on each side)
     arc=0mm,               % Ensure sharp corners
     boxsep=10pt            % Adjust padding inside the box
 ]
