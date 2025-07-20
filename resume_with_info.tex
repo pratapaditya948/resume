@@ -53,13 +53,14 @@
 \vspace{-15pt}
 
 % Profile Summary
-\noindent\hspace*{-12mm}%
 \begin{tcolorbox}[
     colback=gray!20,
     colframe=gray!20,
     sharp corners,
     boxrule=0pt,
-    width=\dimexpr\paperwidth-16mm\relax,% Full page width minus 8mm on each side
+    width=\textwidth,
+    enlarge left by=12mm,  % Extend 12mm to the left (20mm - 8mm)
+    enlarge right by=12mm, % Extend 12mm to the right (20mm - 8mm)
     arc=0mm,               % Ensure sharp corners
     boxsep=10pt            % Adjust padding inside the box
 ]
