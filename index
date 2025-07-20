@@ -1,0 +1,136 @@
+\documentclass[11pt, a4paper]{article}
+
+% Packages
+\usepackage[T1]{fontenc}     
+\usepackage[utf8]{inputenc}  
+\usepackage[british]{babel}  
+\usepackage[left=8mm, right=8mm, top=8mm, bottom=5mm]{geometry} % Reduced margins
+\usepackage{graphicx}        
+\usepackage{xcolor}          
+\usepackage{enumitem}        
+\usepackage{ragged2e} 
+\usepackage[most]{tcolorbox}
+\usepackage{fancyhdr} 
+\usepackage{hyperref}
+\linespread{1.5} % Reduced line spacing
+
+% Customizations
+\pagestyle{fancy}     
+\renewcommand{\headrulewidth}{0pt} % Remove header rule
+\flushbottom  % Avoid content shifting
+
+% Adjust list spacing
+\setlist{parsep=0pt, topsep=0pt, itemsep=1pt, leftmargin=3mm}
+
+% Font settings
+\usepackage{times}   
+\renewcommand{\familydefault}{\rmdefault} 
+
+% Color Definitions
+\definecolor{cvblue}{HTML}{000000} % Ensure all colors default to black
+
+% Custom Commands
+\newcommand{\addline}{\vspace*{1ex}{\color{black}\hrulefill}\par}
+
+\begin{document}
+
+% Header Section
+\begin{figure}[h!]
+    \centering
+    \begin{minipage}{0.2\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{Aditya Pratap Singh Rajawat.jpeg}
+    \end{minipage}%
+    \begin{minipage}{0.78\textwidth}
+        \centering
+        {\fontsize{38}{38}\selectfont \textbf{ADITYA PRATAP}}\\
+        \textbf{Email}: \href{mailto:pratapaditya948@gmail.com}{pratapaditya948@gmail.com} \hspace{2cm}
+\textbf{Contact}: {8239130959}
+
+\textbf{LinkedIn}: \href{https://www.linkedin.com/in/pratapaditya948}{www.linkedin.com/in/pratapaditya948}
+    \end{minipage}
+\end{figure}
+\vspace{-15pt}
+
+% Profile Summary
+\begin{tcolorbox}[
+    colback=gray!20,
+    colframe=gray!20,
+    sharp corners,
+    boxrule=0pt,
+    width=\paperwidth,
+    enlarge left by=-0.33in,  % Adjust for margins
+    enlarge right by=-2in,
+    arc=0mm,               % Ensure sharp corners
+    boxsep=5pt             % Adjust padding inside the box
+]
+\begin{minipage}{0.20\textwidth}
+    \Large \textbf{Professional \\ Summary}
+\end{minipage}%
+\begin{minipage}{0.78\textwidth}
+    L2 Support Engineer with over 2 years of experience in resolving incidents, troubleshooting technical issues, and ensuring smooth system operations. Skilled in SQL, Oracle databases, and Linux systems, with additional hands-on experience in MongoDB, shell scripting, Git, and GitHub. Strong problem-solving and collaboration skills, adept at working in dynamic and fast-paced environments while optimizing performance and streamlining processes.
+    \textbf{Available for immediate joining.}
+\end{minipage}
+\end{tcolorbox}
+
+
+% Main Content
+\begin{minipage}[t]{0.23\textwidth} 
+\vspace{10mm}
+\textbf{\Large {Technical Skills}}
+\addline{}
+\begin{itemize}
+    \item SQL
+    \item PL/SQL
+    \item Incident Management
+    \item Linux Commands 
+    \item Shell Scripting
+    \item ServiceNow
+    \item Git and GitHub
+    \item Oracle Database \\
+\end{itemize} 
+
+\textbf{\Large{Soft Skills}}
+\addline{}
+\begin{itemize}
+    \item Communication skills
+    \item Teamwork and collaboration
+    \item Problem solving
+    \item Adaptability \\
+\end{itemize}
+
+\textbf{\Large {Languages}}
+\addline{}
+\begin{itemize}
+    \item English
+    \item Hindi
+\end{itemize}
+\end{minipage}%
+\hskip0.5em
+\vrule width 0.5pt
+\hskip0.5em
+\begin{minipage}[t]{0.70\textwidth} 
+\vspace{10mm} 
+
+\textbf{\huge {Education}}\addline{}
+\textbf{Bachelor of Technology (Biotechnology)} \hfill \textit{Aug 2018 - Jul 2022}\\
+\textit{Amity University Madhya Pradesh} \hfill \textbf{Graduated with CGPA: 9.3} \\
+
+\textbf{\huge {Experience}}
+\addline{}
+
+\textbf{Junior Software Engineer} \hfill \textit{Aug 2022 - Oct 2024} \\
+\textit{Cognizant Technology Solutions} \hfill \textit{Pune and Mumbai, Maharashtra} 
+\begin{itemize}
+    \item Worked as part of the L2 core support team, consistently achieving zero escalations in incident resolution during my tenure.
+    \item Developed and deployed SQL and PL/SQL scripts to address specific technical issues, including creating triggers, functions, procedures, implementing indexing, and utilizing DML commands to access, retrieve, edit, or delete data as per business requirements.
+    \item Used Linux and Unix Shell Scripting to automate routine tasks, improve process efficiency, manage server operations, and enhance file management.
+    \item Managed bulk XML files, pushing them to deployment servers for issuing bulk policies, and handled individual XML files for auto-tagging and manual policy generation.
+    \item Used ServiceNow and EBAO Tech Tools for incident management, efficiently addressing and resolving incidents, and coordinating with cross-functional teams to ensure swift and effective technical issue resolution.\\
+\end{itemize}
+
+
+
+\end{minipage}
+
+\end{document}
