@@ -1,0 +1,135 @@
+\documentclass[11pt, a4paper]{article}
+
+% Packages
+\usepackage[T1]{fontenc}     
+\usepackage[utf8]{inputenc}  
+\usepackage[british]{babel}  
+\usepackage[left=8mm, right=8mm, top=8mm, bottom=5mm]{geometry} % Reduced margins
+\usepackage{graphicx}        
+\usepackage{xcolor}          
+\usepackage{enumitem}        
+\usepackage{ragged2e} 
+\usepackage[most]{tcolorbox}
+\usepackage{fancyhdr} 
+\usepackage{hyperref}
+\linespread{1.5} % Reduced line spacing
+
+% Customizations
+\pagestyle{fancy}     
+\renewcommand{\headrulewidth}{0pt} % Remove header rule
+\flushbottom  % Avoid content shifting
+
+% Adjust list spacing
+\setlist{parsep=0pt, topsep=0pt, itemsep=1pt, leftmargin=3mm}
+
+% Font settings
+\usepackage{times}   
+\renewcommand{\familydefault}{\rmdefault} 
+
+% Color Definitions
+\definecolor{cvblue}{HTML}{000000} % Ensure all colors default to black
+
+% Custom Commands
+\newcommand{\addline}{\vspace*{1ex}{\color{black}\hrulefill}\par}
+
+\begin{document}
+
+% Header Section
+\begin{figure}[h!]
+    \centering
+    \begin{minipage}{0.2\textwidth}
+        \centering
+        % \includegraphics[width=\linewidth]{your_photo.jpeg}
+    \end{minipage}%
+    \begin{minipage}{0.78\textwidth}
+        \centering
+        {\fontsize{38}{38}\selectfont \textbf{YOUR NAME}}\\
+        \textbf{Email}: \href{mailto:your.email@example.com}{your.email@example.com} \hspace{2cm}
+\textbf{Contact}: {Your Phone Number}
+
+\textbf{LinkedIn}: \href{https://www.linkedin.com/in/yourprofile}{www.linkedin.com/in/yourprofile}
+    \end{minipage}
+\end{figure}
+\vspace{-15pt}
+
+% Profile Summary
+\begin{tcolorbox}[
+    colback=gray!20,
+    colframe=gray!20,
+    sharp corners,
+    boxrule=0pt,
+    width=\paperwidth,
+    enlarge left by=-0.33in,  % Adjust for margins
+    enlarge right by=-2in,
+    arc=0mm,               % Ensure sharp corners
+    boxsep=5pt             % Adjust padding inside the box
+]
+\begin{minipage}{0.20\textwidth}
+    \Large \textbf{Professional \\ Summary}
+\end{minipage}%
+\begin{minipage}{0.78\textwidth}
+    Your professional summary goes here. Describe your experience, key skills, and career objectives. This section should provide a brief overview of your qualifications and what you bring to potential employers.
+\end{minipage}
+\end{tcolorbox}
+
+
+% Main Content
+\begin{minipage}[t]{0.23\textwidth} 
+\vspace{10mm}
+\textbf{\Large {Technical Skills}}
+\addline{}
+\begin{itemize}
+    \item Skill 1
+    \item Skill 2
+    \item Skill 3
+    \item Skill 4
+    \item Skill 5
+    \item Skill 6
+    \item Skill 7
+    \item Skill 8 \\
+\end{itemize} 
+
+\textbf{\Large{Soft Skills}}
+\addline{}
+\begin{itemize}
+    \item Soft skill 1
+    \item Soft skill 2
+    \item Soft skill 3
+    \item Soft skill 4 \\
+\end{itemize}
+
+\textbf{\Large {Languages}}
+\addline{}
+\begin{itemize}
+    \item Language 1
+    \item Language 2
+\end{itemize}
+\end{minipage}%
+\hskip0.5em
+\vrule width 0.5pt
+\hskip0.5em
+\begin{minipage}[t]{0.70\textwidth} 
+\vspace{10mm} 
+
+\textbf{\huge {Education}}\addline{}
+\textbf{Your Degree Title} \hfill \textit{Start Date - End Date}\\
+\textit{Your University/Institution Name} \hfill \textbf{Your Grade/GPA} \\
+
+\textbf{\huge {Experience}}
+\addline{}
+
+\textbf{Your Job Title} \hfill \textit{Start Date - End Date} \\
+\textit{Company Name} \hfill \textit{Location} 
+\begin{itemize}
+    \item Your first key responsibility or achievement
+    \item Your second key responsibility or achievement
+    \item Your third key responsibility or achievement
+    \item Your fourth key responsibility or achievement
+    \item Your fifth key responsibility or achievement\\
+\end{itemize}
+
+
+
+\end{minipage}
+
+\end{document}
